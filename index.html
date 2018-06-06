@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+        <div itemscope itemtype="http://schema.org/Blog" class="home">
+          <link itemprop="url" href="https://www.joecridge.me">
+          <ul class="post-list">
+            {% for post in paginator.posts %}<li itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+              {% if post.description %}<meta itemprop="description" content="{{ post.description | strip_newlines | truncate: 160 }}" />
+              {% endif %}{% if post.thumbnail %}<meta itemprop="image" content="{{ post.thumbnail | prepend: site.baseurl | prepend: site.url}}" />
+              {% endif %}<span class="post-meta tk tk-proxima-nova"><time itemprop="datePublished" datetime="{{ post.date | date: "%Y-%m-%d" }}">{% assign m = post.date | date: "%-m" | plus: 0 %}{% if m > 2 and m < 9 %}{{ post.date | date: "%B" }} {% elsif m == 9 %}Sept. {% else %}{{ post.date | date: "%b" }}. {% endif %}{{ post.date | date: "%-d, %Y" }}</time></span>
+              <h2 itemprop="headline" class="post-link tk tk-proxima-nova"><a itemprop="url" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+              <div class="tk tk-proxima-nova">
+
+{{ post.excerpt }}
+              </div>
+              <table class="tk tk-proxima-nova">
+                <tbody>
+                  <tr>
+                    <td><a href="{{ post.url | prepend: site.baseurl }}">Read full post&#8230;</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            {% endfor %}
+          </ul>
+          <table class="paginator tk tk-proxima-nova">
+            <tbody>
+              <tr>
+                <td class="newer">{% if paginator.previous_page %}<a href="{{ paginator.previous_page_path }}">&larr; Newer</a>{% endif %}</td>
+                <td class="older">{% if paginator.next_page %}<a href="{{ paginator.next_page_path }}">Older &rarr;</a>{% endif %}</td>
+              <tr>
+            </tbody>
+          </table>
+        </div>

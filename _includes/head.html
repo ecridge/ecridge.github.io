@@ -1,0 +1,53 @@
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-title" content="Joe Cridge">
+    <meta name="application-name" content="Joe Cridge">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#3a96fc">
+    <meta name="p:domain_verify" content="3cb92c8a47278474534686c2fc0f6346"/>
+    <meta name="description" content="{% if page.description %}{{ page.description | strip_newlines | truncate: 160 }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | strip_newlines | truncate: 160 }}{% endif %}">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Joe Cridge","url":"https://www.joecridge.me","sameAs":["http://plus.google.com/+JoeCridge","http://uk.linkedin.com/in/joecridge","http://twitter.com/joecridge","http://github.com/joecridge"]}</script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","name":"Joe Cridge","url":"https://www.joecridge.me"}</script>
+    <script language="javascript" type="text/javascript">(function(d){var config={kitId: 'hyh4zkg',scriptTimeout: 1500,async: true},h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)})(document);</script>
+    <script language="javascript" type="text/javascript" src="/js/p5.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/js/motion.min.js"></script>
+    <script type="text/javascript">
+      var _iub = _iub || [];
+      _iub.csConfiguration = {
+        cookiePolicyId: 7816900,
+        siteId: 517587,
+        lang: 'en',
+        banner: {
+          applyStyles: false,
+          content: 'This website sets cookies in your browser. Carry on browsing if you&rsquo;re happy with this, or view the %{cookie_policy_link} for more information.',
+          cookiePolicyLinkCaption: 'cookie policy',
+          innerHtmlCloseBtn: '&times;',
+          slideDown: false
+        }
+      };
+    </script>
+    <script type="text/javascript" src= "//cdn.iubenda.com/cookie_solution/safemode/iubenda_cs.js" charset="UTF-8" async></script>
+  </head>

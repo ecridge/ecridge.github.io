@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+        <div itemscope itemtype="http://schema.org/BlogPosting">
+          {% if page.description %}<meta itemprop="description" content="{{ page.description | strip_newlines | truncate: 160 }}" />
+          {% endif %}{% if page.thumbnail %}<meta itemprop="image" content="{{ page.thumbnail | prepend: site.baseurl | prepend: site.url }}" />
+          {% endif %} <div class="post">
+            <header class="post-header">
+              <h1 itemprop="headline" class="post-title tk tk-proxima-nova">{{ page.title }}</h1>
+              <p class="post-meta tk tk-proxima-nova"><time itemprop="datePublished" datetime="{{ page.date | date: "%Y-%m-%d" }}">{% assign m = page.date | date: "%-m" | plus: 0 %}{% if m > 2 and m < 9 %}{{ page.date | date: "%B" }} {% elsif m == 9 %}Sept. {% else %}{{ page.date | date: "%b " }}.{% endif %}{{ page.date | date: "%-d, %Y" }}</time><span itemprop="articleSection" class="post-category"><span class="icon  icon--cat"><svg viewBox="0 0 16 16" version="1.1" style="fill-rule:evenodd;"><g transform="matrix(0.0167411,-1.92593e-34,-1.92593e-34,0.0167411,0.5,-0.571429)"><path fill="#888" d="M896,576L824,119C819,88 792,64 760,64L136,64C104,64 77,88 72,119L0,576L0,896C0,931 29,960 64,960L832,960C867,960 896,931 896,896L896,576ZM686,611L658,668C647,690 625,704 600,704L295,704C271,704 249,690 238,669L210,611C199,590 177,576 153,576L64,576L128,128L768,128L832,576L744,576C719,576 697,590 686,611Z"/></g></svg></span><a href="{{ site.baseurl }}/{{ page.categories | first | slugify }}/">{{ page.categories | first | capitalize }}</a></span>{% unless page.tags.size == 0 %}<span class="icon  icon--tag"><svg viewBox="0 0 16 16" version="1.1" style="fill-rule:evenodd;"><path fill="#888" d="M8.232,0.898C7.659,0.325 6.876,0 6.073,0L3.056,0C1.375,0 0,1.375 0,3.056L0,6.073C0,6.876 0.325,7.659 0.898,8.232L8.308,15.642C8.785,16.119 9.549,16.119 10.027,15.642L15.642,10.027C16.119,9.549 16.119,8.785 15.642,8.308L8.232,0.898ZM1.681,7.449C1.299,7.086 1.108,6.589 1.108,6.073L1.108,3.056C1.108,1.986 1.986,1.108 3.056,1.108L6.073,1.108C6.589,1.108 7.086,1.299 7.449,1.681L14.954,9.167L9.167,14.954L1.681,7.449ZM8,4.571L4.571,8L9.143,12.571L12.571,9.143L8,4.571ZM11.053,9.132L8.004,6.083L6.09,7.997L9.139,11.046L11.053,9.132ZM5.714,4C5.714,3.054 4.946,2.286 4,2.286C3.054,2.286 2.286,3.054 2.286,4C2.286,4.946 3.054,5.714 4,5.714C4.946,5.714 5.714,4.946 5.714,4ZM4,4.571C3.685,4.571 3.429,4.315 3.429,4C3.429,3.685 3.685,3.429 4,3.429C4.315,3.429 4.571,3.685 4.571,4C4.571,4.315 4.315,4.571 4,4.571Z"/></svg></span><span itemprop="keywords" class="post-tags">{% for tag in page.tags %}{% unless forloop.first %}, {% endunless %}<a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}">{% if forloop.first %}{{ tag | capitalize }}{% else %}{{ tag }}{% endif %}</a>{% endfor %}</span>{% endunless %}{% if page.bitlink %}<span class="icon  icon--link"><svg viewBox="0 0 16 16" style="fill-rule:evenodd;"><g transform="matrix(0.0110485,-0.0110485,0.0110485,0.0110485,-3.31371,8)"><path fill="#888" d="M768,768L576,768C576,768 321.719,768 320,512C320,489.719 323.469,468.531 328.312,448L465.717,448C454.717,466.875 447.998,488.562 447.998,512C447.998,640 575.998,640 575.998,640L767.998,640C767.998,640 895.998,640 895.998,512C895.998,384 768,384 768,384C768,384 767.875,320 704,256L768,256C768,256 1024,256 1024,512C1024,768 768,768 768,768ZM695.688,576L558.25,576C569.25,557.125 576,535.438 576,512C576,384 448,384 448,384L256,384C256,384 128,384 128,512C128,640 256,640 256,640C256,640 252.094,704.875 321.719,768L256,768C256,768 0,768 0,512C0,256 256,256 256,256L448,256C448,256 704,256 704,512C704,534.281 700.5,555.5 695.688,576Z"/></g></svg></span><a itemprop="url" class="bitlink" href="{{ page.bitlink }}">{{ page.bitlink }}</a>{% endif %}</p>
+            </header>
+            <article itemprop="articleBody" class="post-content tk tk-proxima-nova">
+
+{{ content }}
+            </article>
+          </div>
+          {% if page.comments %}<div itemprop="comment" id="disqus_thread"></div>
+          <script type="text/javascript">
+              var disqus_shortname = 'joecridge';
+              var disqus_identifier = '{{ page.id }}';
+              var disqus_title = '{{ page.title }}';
+              var disqus_url = '{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}';
+              (function() {
+                  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+              })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>{% endif %}
+        </div>

@@ -1,0 +1,35 @@
+
+    <footer class="site-footer">
+      <div class="wrapper">
+        <div class="footer-col-wrapper">
+          <div class="footer-col footer-col-1">
+            <ul class="contact-list tk tk-proxima-nova">
+              <li>Say hello</li>
+              <li><a href="mailto:{{ site.email }}?subject=Hello">{{ site.email }}</a></li>
+            </ul>
+          </div>
+          <div class="footer-col footer-col-2">
+            <ul class="social-media-list tk tk-proxima-nova">
+              {% if site.pgp_key %}<li>
+                <span class="icon  icon--pgp_key"><svg viewBox="0 0 16 16"><g transform="matrix(0.0178392,0,0,0.0178392,1.11022e-15,-1.06272)"><path fill="#888" d="M640.9,63.9C499.5,63.9 384.9,178.5 384.9,319.9C384.9,339.5 387.1,358.5 391.3,376.8L0,768L0,832L64,896L192,896L256,832L256,768L320,768L320,704L384,704L384,640L512,640L582.8,569.2C601.5,573.5 620.9,575.8 640.9,575.8C782.3,575.8 896.9,461.2 896.9,319.8C896.9,178.4 782.2,63.9 640.9,63.9ZM384,512L64,832L64,768L384,448L384,512ZM704,320C668.7,320 640,291.3 640,256C640,220.7 668.7,192 704,192C739.3,192 768,220.7 768,256C768,291.3 739.3,320 704,320Z"/></g></svg></span>
+                <a href="{{ site.base_url  }}/{{ site.pgp_key }}.asc" download><span class="username">{{ site.pgp_key }}</span></a>
+              </li>{% endif %}
+              {% if site.github_username %}<li>
+                <span class="icon  icon--github"><svg viewBox="0 0 16 16"><g transform="matrix(0.015625,0,0,0.015625,0,0)"><path fill="#828282" d="M940.812,277.688C949.062,257.469 976.187,175.938 932.25,65.782C932.25,65.782 864.875,44.47 712.375,148.688C648.5,131.125 579.875,128.5 512,128.5C444.094,128.5 375.562,131.125 311.5,148.75C159.031,44.469 91.719,65.781 91.719,65.781C47.812,176 74.938,257.469 83.188,277.688C31.5,333.562 0,404.875 0,492.344C0,821.562 213.25,896 510.844,896C808.562,896 1024,821.562 1024,492.344C1024,404.875 992.5,333.562 940.812,277.688ZM512,833C300.594,833 129.219,823.125 129.219,618.312C129.219,569.374 153.281,523.717 194.563,486C263.313,423.031 379.844,456.312 512.001,456.312C644.251,456.312 760.626,423.031 829.439,485.937C870.751,523.717 894.877,569.249 894.877,618.249C894.875,823.125 723.375,833 512,833ZM351.156,512.438C308.687,512.438 274.25,563.5 274.25,626.626C274.25,689.752 308.688,740.938 351.156,740.938C393.531,740.938 427.968,689.75 427.968,626.626C427.968,563.502 393.531,512.438 351.156,512.438ZM672.875,512.438C630.5,512.438 596,563.5 596,626.625C596,689.75 630.5,740.937 672.875,740.937C715.25,740.937 749.687,689.749 749.687,626.625C749.75,563.5 715.312,512.438 672.875,512.438Z"/></g></svg></span>
+                <a href="https://github.com/{{ site.github_username }}"><span class="username">{{ site.github_username }}</span></a>
+              </li>{% endif %}
+            </ul>
+          </div>
+          <div class="footer-col footer-col-3 tk tk-proxima-nova">
+            <p itemprop="about" class="text"><a class="footer-text" href="{{ site.baseurl }}/about/">{{ site.description }}</a></p>
+          </div>
+        </div>
+        <div class="footer-col-wrapper tk tk-proxima-nova">
+          <ul class="policies">
+            <li><a class="footer-text" href="{{ site.baseurl }}/terms/">Terms</a></li>
+            <li><a class="footer-text" href="https://www.iubenda.com/privacy-policy/7816900">Privacy</a></li>
+            <li><a class="footer-text" href="https://www.iubenda.com/privacy-policy/7816900/cookie-policy">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
