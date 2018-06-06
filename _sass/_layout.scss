@@ -1,0 +1,405 @@
+// Site header
+.site-header {
+  border-top: 1px solid $grey-color-light;
+  border-bottom: 1px solid $grey-color-light;
+  min-height: 56px;
+
+  // Positioning context for the mobile navigation icon
+  position: relative;
+}
+.site-title {
+  font-size: 26px;
+  line-height: 56px;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  float: left;
+
+  &:link,
+  &:visited {
+    color: $grey-color-dark;
+  }
+  &:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+  }
+
+  svg {
+    width: 23px;
+    height: 23px;
+    vertical-align: 7px;
+    margin-right: -8px;
+  }
+}
+.site-nav {
+  float: right;
+  line-height: 56px;
+
+  .menu-icon {
+    display: none;
+  }
+
+  .page-link {
+    color: $text-color;
+    line-height: $base-line-height;
+
+    // Gaps between nav items, but not on the first one
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+
+    &:hover {
+      border-bottom: 1px solid $primary-color;
+    }
+  }
+
+  @include media-query($on-palm) {
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    background-color: $background-color;
+    border: 1px solid $grey-color-light;
+
+    .menu-icon {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 26px;
+      line-height: 0;
+      padding-top: 9px;
+      text-align: center;
+
+      svg {
+        width: 18px;
+        height: 18px;
+
+        path {
+          fill: $grey-color-dark;
+        }
+
+        transition: all 0.25s ease 0s;
+      }
+    }
+
+    .trigger {
+      clear: both;
+      width: 36px;
+      padding: none;
+      transition: padding 0.25s ease 0s;
+    }
+
+    &:hover .trigger {
+      width: auto;
+      padding-bottom: 5px;
+      padding-left: 5px;
+    }
+
+    &:hover .menu-icon {
+      border-bottom: 1px solid rgba(0, 0, 0, 0);
+
+      svg {
+        transform: rotate(90deg);
+      }
+    }
+
+    .page-link {
+      display: none;
+      margin: 5px 40px 5px 10px;
+
+      // Remove nav item gaps
+      &:not(:first-child) {
+        margin-left: 10px;
+      }
+    }
+
+    &:hover .page-link {
+      display: block;
+    }
+  }
+}
+#site-motion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+// Site footer
+.site-footer {
+  border-top: 1px solid $grey-color-light;
+  padding: $spacing-unit 0;
+}
+.footer-heading {
+  font-size: 18px;
+  margin-bottom: $spacing-unit / 2;
+}
+.footer-text {
+  &,
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    color: $grey-color;
+    border-bottom: none;
+  }
+}
+.contact-list,
+.social-media-list {
+  list-style: none;
+  margin-left: 0;
+}
+.footer-col-wrapper {
+  font-size: 15px;
+  color: $grey-color;
+  margin-left: -$spacing-unit / 2;
+  @extend %clearfix;
+}
+.footer-col {
+  float: left;
+  margin-bottom: $spacing-unit / 2;
+  padding-left: $spacing-unit / 2;
+}
+.footer-col-1 {
+  width: -webkit-calc(24% - (#{$spacing-unit} / 2));
+  width:     calc(24% - (#{$spacing-unit} / 2));
+}
+.footer-col-2 {
+  width: -webkit-calc(19% - (#{$spacing-unit} / 2));
+  width:     calc(19% - (#{$spacing-unit} / 2));
+}
+.footer-col-3 {
+  width: -webkit-calc(57% - (#{$spacing-unit} / 2));
+  width:     calc(57% - (#{$spacing-unit} / 2));
+}
+.policies {
+  list-style-type: none;
+  margin: $spacing-unit/4 0;
+  padding: 0;
+  li {
+    display: inline;
+    margin: 0 0 0 $spacing-unit/2;
+  }
+}
+
+@include media-query($on-laptop) {
+  .footer-col-1,
+  .footer-col-2 {
+    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+    width:     calc(50% - (#{$spacing-unit} / 2));
+  }
+
+  .footer-col-3 {
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:     calc(100% - (#{$spacing-unit} / 2));
+  }
+}
+
+@include media-query($on-palm) {
+  .footer-col {
+    float: none;
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:     calc(100% - (#{$spacing-unit} / 2));
+  }
+}
+
+// Page content
+.page-content {
+  padding: $spacing-unit 0;
+}
+.page-heading {
+  font-size: 20px;
+}
+.post-list {
+  margin-left: 0;
+  list-style: none;
+
+  li {
+    margin-bottom: $spacing-unit;
+  }
+}
+.post-meta {
+  font-size: $small-font-size;
+  color: $grey-color;
+}
+.post-link {
+  font-size: 24px;
+}
+.squish {
+  margin-top: - $spacing-unit / 4;
+}
+
+// Posts
+.post-header {
+  margin-bottom: $spacing-unit;
+}
+.post-title {
+  font-size: 42px;
+  letter-spacing: -1px;
+  line-height: 1;
+
+  @include media-query($on-laptop) {
+    font-size: 36px;
+  }
+}
+.post-content {
+  margin-bottom: $spacing-unit;
+
+  h2 {
+    font-size: 32px;
+
+    @include media-query($on-laptop) {
+      font-size: 28px;
+    }
+  }
+
+  h3 {
+    font-size: 26px;
+
+    @include media-query($on-laptop) {
+      font-size: 22px;
+    }
+  }
+
+  h4 {
+    font-size: 20px;
+
+    @include media-query($on-laptop) {
+      font-size: 18px;
+    }
+  }
+}
+.icon--cat,
+.icon--link,
+.icon--tag {
+  padding-left: 15px;
+  padding-right: 1px;
+}
+
+// Don’t colour bitlinks
+.bitlink {
+  &,
+  &:link,
+  &:visited,
+  &:hover {
+    color: $grey-color;
+  }
+  &:active {
+    color: $active-color;
+  }
+}
+
+// Pagination
+.paginator {
+  border: none;
+  margin-top: -$spacing-unit / 2;
+  margin-bottom: -$spacing-unit / 2;
+
+  .newer {
+    text-align: left;
+  }
+
+  .older {
+    text-align: right;
+  }
+}
+
+
+// Tag lists
+.tag-list {
+  list-style-type: none;
+  margin-left: 0;
+
+  li {
+    display: inline-block;
+    padding: 0;
+    margin: 5px 3px 5px 3px;
+    border: 1px solid lighten($grey-color, 30%);
+    transition: border-color 0.15s ease-out 0s;
+
+    &:hover {
+      border-color: $grey-color;
+    }
+    &:active {
+      background-color: #ffb700;
+    }
+  }
+
+  a {
+    display: block;
+    padding: 4px 10px 3px 10px;
+    color: $text-color;
+    border-color: rgba(0, 0, 0, 0);
+  }
+}
+
+// Cookie banner
+#iubenda-cs-banner {
+    // Iubenda recommend that the !important styles are left unchanged. The
+    // only exception is that `top` can be replaced with `bottom` to change the
+    // banner position.
+    top: 0px !important;
+    left: 0px !important;
+    position: fixed !important;
+    width: 100% !important;
+    z-index: 99999998 !important;
+    background-color: black;
+}
+.iubenda-cs-content {
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    width: auto;
+    font-family: $base-font-family;
+    font-size: 15px;
+    background: #ff2d55;
+    color: #fff;
+}
+.iubenda-banner-content {
+    // Empty by default.
+}
+.iubenda-cs-rationale {
+    max-width: 900px; position:relative; margin: 0 auto;
+}
+.iubenda-banner-content > p {
+    font-family: $base-font-family;
+    line-height: 1.5;
+    a {
+    }
+}
+.iubenda-cs-close-btn {
+    margin:0;
+    color: #fff;
+    text-decoration:none;
+    font-size: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+
+    &:link,
+    &:visited {
+        color: #fff;
+    }
+    &:hover {
+        border-bottom: none;
+    }
+    &:active {
+        color: $active-color;
+    }
+}
+.iubenda-cs-cookie-policy-lnk {
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+
+    &:link,
+    &:visited {
+        color: #fff;
+    }
+    &:hover {
+        border-bottom: 1px solid #fff;
+    }
+    &:active {
+        color: $active-color;
+    }
+}
