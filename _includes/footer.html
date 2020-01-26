@@ -3,13 +3,13 @@
       <div class="wrapper">
         <div class="footer-col-wrapper">
           <div class="footer-col footer-col-1">
-            <ul class="contact-list tk tk-proxima-nova">
+            <ul class="contact-list">
               <li>Say hello</li>
               <li><a href="mailto:{{ site.email }}?subject=Hello">{{ site.email }}</a></li>
             </ul>
           </div>
           <div class="footer-col footer-col-2">
-            <ul class="social-media-list tk tk-proxima-nova">
+            <ul class="social-media-list">
               {% if site.pgp_key %}<li>
                 <span class="icon  icon--pgp_key"><svg viewBox="0 0 16 16"><g transform="matrix(0.0178392,0,0,0.0178392,1.11022e-15,-1.06272)"><path fill="#888" d="M640.9,63.9C499.5,63.9 384.9,178.5 384.9,319.9C384.9,339.5 387.1,358.5 391.3,376.8L0,768L0,832L64,896L192,896L256,832L256,768L320,768L320,704L384,704L384,640L512,640L582.8,569.2C601.5,573.5 620.9,575.8 640.9,575.8C782.3,575.8 896.9,461.2 896.9,319.8C896.9,178.4 782.2,63.9 640.9,63.9ZM384,512L64,832L64,768L384,448L384,512ZM704,320C668.7,320 640,291.3 640,256C640,220.7 668.7,192 704,192C739.3,192 768,220.7 768,256C768,291.3 739.3,320 704,320Z"/></g></svg></span>
                 <a href="{{ site.base_url  }}/{{ site.pgp_key }}.asc" download><span class="username">{{ site.pgp_key }}</span></a>
@@ -20,16 +20,9 @@
               </li>{% endif %}
             </ul>
           </div>
-          <div class="footer-col footer-col-3 tk tk-proxima-nova">
-            <p itemprop="about" class="text"><a class="footer-text" href="{{ site.baseurl }}/about/">{{ site.description }}</a></p>
+          <div class="footer-col footer-col-3">
+            <p itemprop="about" class="text"><span class="footer-text">{{ site.description }}</span></p>
           </div>
-        </div>
-        <div class="footer-col-wrapper tk tk-proxima-nova">
-          <ul class="policies">
-            <li><a class="footer-text" href="{{ site.baseurl }}/terms/">Terms</a></li>
-            <li><a class="footer-text" href="https://www.iubenda.com/privacy-policy/7816900">Privacy</a></li>
-            <li><a class="footer-text" href="https://www.iubenda.com/privacy-policy/7816900/cookie-policy">Cookies</a></li>
-          </ul>
         </div>
       </div>
     </footer>

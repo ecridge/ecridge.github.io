@@ -4,7 +4,7 @@
 @charset "utf-8";
 
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   18px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -20,7 +20,7 @@ $highlight-color:  #ff2d55;
 
 $grey-color:       #888;
 $grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color-dark:  darken($grey-color, 20%);
 
 // Width of the content area
 $content-width:    800px;

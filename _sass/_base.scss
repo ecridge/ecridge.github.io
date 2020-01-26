@@ -42,7 +42,7 @@ body {
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
-  font-weight: 300;
+  font-weight: 200;
   color: $text-color;
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
@@ -97,7 +97,7 @@ table {
   border-bottom: 1px solid $grey-color-light;
 }
 th {
-  font-weight: 300;
+  font-weight: 200;
   border-bottom: 1px solid $grey-color-light;
 }
 
@@ -124,6 +124,7 @@ h5,
 h6 {
   color: $grey-color-dark;
   font-weight: 400;
+  letter-spacing: -0.5px;
 }
 h2 {
   border-bottom: 1px solid $grey-color-light;
@@ -236,12 +237,4 @@ pre {
       fill: $grey-color;
     }
   }
-}
-
-// Hide flash of unstyled text
-.tk {
-  transition: opacity 0.15s ease-out 0s;
-}
-.wf-loading .tk {
-  opacity: 0.0;
 }
