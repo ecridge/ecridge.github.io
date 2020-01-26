@@ -1,10 +1,10 @@
 
     <header class="site-header">
       <div class="wrapper">
-        <a itemprop="name" class="site-title tk tk-proxima-nova" href="{{ site.baseurl }}/"><svg viewBox="0 0 16 16" style="fill-rule:evenodd"><path d="M13,3L3,3L3,13L13,13L13,3ZM12,4L4,4L4,12L12,12L12,4Z" style="fill:rgb(0,122,255);"/></svg> {{ site.title }}</a>
+        <a itemprop="name" class="site-title" href="{{ site.baseurl }}/"><svg viewBox="0 0 16 16" style="fill-rule:evenodd"><path d="M13,3L3,3L3,13L13,13L13,3ZM12,4L4,4L4,12L12,12L12,4Z" style="fill:rgb(0,122,255);"/></svg> {{ site.title }}</a>
         <nav class="site-nav">
-          <a href="#" class="menu-icon tk tk-proxima-nova"><svg viewBox="0 0 18 18"><g transform="matrix(1.08473,0,0,1.08473,-0.760764,-0.762573)"><path d="M5.819,17.297L4.36,15.929L10.856,9L4.36,2.071L5.819,0.703L13.598,9C11.005,11.766 8.412,14.531 5.819,17.297Z" style="fill:rgb(66,66,66);"/></g></svg></a>
-          <div class="trigger tk tk-proxima-nova">{% for page in site.pages %}{% if page.navbar %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}{% endfor %}</div>
+          <a href="#" class="menu-icon"><svg viewBox="0 0 18 18"><g transform="matrix(1.08473,0,0,1.08473,-0.760764,-0.762573)"><path d="M5.819,17.297L4.36,15.929L10.856,9L4.36,2.071L5.819,0.703L13.598,9C11.005,11.766 8.412,14.531 5.819,17.297Z" style="fill:rgb(66,66,66);"/></g></svg></a>
+          <div class="trigger">{% for page in site.pages %}{% if page.navbar %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}{% endfor %}</div>
         </nav>
       </div>
       <div id="site-motion"></div>
