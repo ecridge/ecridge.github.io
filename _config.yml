@@ -2,11 +2,11 @@
 # Site settings
 ##
 
-url:                "https://www.joecridge.me"
+url:                "https://ecridge.com"
 title:              Eden Cridge
 email:              eden.cridge@gmail.com
 pgp_key:            DD659648
-github_username:    joecridge
+github_username:    ecridge
 description: >
   I&rsquo;m a software engineer with a physics degree. I enjoy learning
   languages, solving puzzles and generally being creative.

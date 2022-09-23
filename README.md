@@ -2,8 +2,6 @@
 
 This repo contains the source for my Jekyll-based [personal website][Home].
 
-Deploy method is a little buggy, see [#25][].
-
 ## Front-matter variables
 
 Below is a list of the YAML variables that I am using within posts and pages:
@@ -48,5 +46,4 @@ should probably be mentioned in the privacy policy.
 ### Probably don’t need to be in policy
 - Contact link
 
-[Home]: https://www.joecridge.me
-[#25]: https://github.com/joecridge/blog/issues/25
+[Home]: https://ecridge.com
