@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/ecridge
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://ecridge.com
+  * I am ecridge (https://keybase.io/ecridge) on keybase.
+  * I have a public key ASBWxr9GnLondKMikc611AduG6x43WLosfTgIxkRxJzg5go
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01209046aa605bae2350bf89c2f973bb4c5844cb48f60b61b6514105bdb0c4faab930a",
+      "host": "keybase.io",
+      "kid": "012056c6bf469cba2774a32291ceb5d4076e1bac78dd62e8b1f4e0231911c49ce0e60a",
+      "uid": "d4901fb9ab65c0eb2000b36ddd589719",
+      "username": "ecridge"
+    },
+    "merkle_root": {
+      "ctime": 1663897129,
+      "hash": "10df4d3dae5a7f458491f704258009a4aa1e36663a2abf99684794e5556e696428be5a667a4b7f14d13e565a5f5e641b83c2358c7a608739997ae108a50f0dc1",
+      "hash_meta": "99d66af40cfccac705c1b9535224c08d0dd65e0221b34e8d591f67e5e9e8fef4",
+      "seqno": 23245791
+    },
+    "service": {
+      "entropy": "PXJtI5R6GQ2ZT/ACQZlivojv",
+      "hostname": "ecridge.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.0.2"
+  },
+  "ctime": 1663897168,
+  "expire_in": 504576000,
+  "prev": "8203dd86d5a4cea69745218a5e845a5edeadc4b64c26619c6ac51248781f7332",
+  "seqno": 12,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgVsa/Rpy6J3SjIpHOtdQHbhuseN1i6LH04CMZEcSc4OYKp3BheWxvYWTESpcCDMQgggPdhtWkzqaXRSGKXoRaXt6txLZMJmGcasUSSHgfczLEIBYH+mmO5103lvQcBsDevDcDroB6Xdh0ZCq71chFGmyQAgHCo3NpZ8RAohbDz8x1P2eY5Z9ugpTLVB5yB/2Vv4l9GQ545N1LpD5ELQgqPdvtwBSJWTSJXaIiupP5ajFVH6mXBDqLOJVHCKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIEtgIImmR2EOrY4vc9AVt5HG7VwoXe/n9UyMb61L2RdDo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ecridge
+
+==================================================================
