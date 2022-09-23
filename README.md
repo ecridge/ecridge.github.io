@@ -28,22 +28,4 @@ Below is a list of the YAML variables that I am using within posts and pages:
   structured data / rich site snippets (and conceivably easy addition of
   thumbnails to index pages in the future)
 
-## Data collection
-
-The following is a list of data collection services used on the site which
-should probably be mentioned in the privacy policy.
-
-### Definitely should be in policy
-- Adobe TypeKit
-- CloudFlare
-- DigitalOcean
-- Disqus
-- Google Analytics
-
-### Probably should be in policy
-- Bitly links
-
-### Probably don’t need to be in policy
-- Contact link
-
 [Home]: https://ecridge.com
