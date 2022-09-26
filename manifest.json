@@ -1,5 +1,5 @@
 {
-	"name": "Joe Cridge",
+	"name": "Eden Cridge",
 	"icons": [
 		{
 			"src": "\/android-chrome-36x36.png",
@@ -38,6 +38,6 @@
 			"density": "4.0"
 		}
 	],
-	"start_url": "https:\/\/www.joecridge.me",
+	"start_url": "https:\/\/ecridge.com",
 	"display": "standalone"
 }

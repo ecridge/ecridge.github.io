@@ -2,17 +2,15 @@
 
 This repo contains the source for my Jekyll-based [personal website][Home].
 
-Deploy method is a little buggy, see [#25][].
-
 ## Front-matter variables
 
 Below is a list of the YAML variables that I am using within posts and pages:
 
 - `bitlink: http://cridge.co/bL4h81A` to display a short permalink beside post
   metadata
-- `category: category name (by Joe)` where the category will be displayed as
-  "Category name (by Joe)" and will link to the custom index page
-  `/category-name-by-joe`
+- `category: category name (by Eden)` where the category will be displayed as
+  "Category name (by Eden)" and will link to the custom index page
+  `/category-name-by-eden`
 - `comments: true` to create and display a Disqus thread for that post (it
   really is that simple!)
 - `description: A summary string that will be folded and truncated to 160
@@ -30,23 +28,4 @@ Below is a list of the YAML variables that I am using within posts and pages:
   structured data / rich site snippets (and conceivably easy addition of
   thumbnails to index pages in the future)
 
-## Data collection
-
-The following is a list of data collection services used on the site which
-should probably be mentioned in the privacy policy.
-
-### Definitely should be in policy
-- Adobe TypeKit
-- CloudFlare
-- DigitalOcean
-- Disqus
-- Google Analytics
-
-### Probably should be in policy
-- Bitly links
-
-### Probably don’t need to be in policy
-- Contact link
-
-[Home]: https://www.joecridge.me
-[#25]: https://github.com/joecridge/blog/issues/25
+[Home]: https://ecridge.com
