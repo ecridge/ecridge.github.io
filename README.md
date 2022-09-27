@@ -24,8 +24,8 @@ Below is a list of the YAML variables that I am using within posts and pages:
   will be displayed as "Apples, bananas, GREEN_STAIRS, who’s Tim?" and link to
   (respectively) `/tags/#apples`, `/tags/#bananas`, `/tags/#green-stairs`, and
   `/tags/#who-s-tim`
-- `thumbnail: /content/jpg/my-cool-thumbnail.jpg` to set the post thumbnail for
-  structured data / rich site snippets (and conceivably easy addition of
+- `thumbnail: /content/jpg/my-cool-thumbnail.jpg` to set the post thumbnail
+  for structured data / rich site snippets (and conceivably easy addition of
   thumbnails to index pages in the future)
 
 [Home]: https://ecridge.com
