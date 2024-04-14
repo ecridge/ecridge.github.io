@@ -4,8 +4,8 @@
 
 url:                "https://ecridge.com"
 title:              Eden Cridge
-email:              eden.cridge@gmail.com
-pgp_key:            43B5C7E4
+email:              ecridge@ecridge.com
+pgp_key:            16B7F5DE
 github_username:    ecridge
 description: >
   I&rsquo;m a software engineer with a physics degree. I enjoy learning
