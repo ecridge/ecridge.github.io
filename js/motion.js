@@ -1,4 +1,4 @@
-/*! motion.js | ecridge.com */
+/*! motion.js | edencridge.com */
 
 function setup() {
   var p5Canvas = createCanvas(windowWidth, 57);

@@ -28,4 +28,4 @@ Below is a list of the YAML variables that I am using within posts and pages:
   for structured data / rich site snippets (and conceivably easy addition of
   thumbnails to index pages in the future)
 
-[Home]: https://ecridge.com
+[Home]: https://edencridge.com
